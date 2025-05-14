@@ -9,15 +9,15 @@ const ItemList = () => {
 
 const sortingOptions = [
   {
-    label:"Sort by default",
+    label:"Default",
     value:"default"
   },
   {
-    label:"Sort by packed",
+    label:"Packed",
     value:"packed"
   },
   {
-    label:"Sort by unpacked",
+    label:"Unpacked",
     value:"unpacked"
   },
 ]
@@ -62,7 +62,7 @@ const sortedItems = useMemo(
 
       {items.length === 0 ? <EmptyView/> : null} 
 
-      {items.length > 0 ? (<section className="sorting"><Select options={sortingOptions} defaultValue={sortingOptions[0]} onChange={(option)=> setSortBy(option.value)}/></section> ) : null } 
+      {items.length > 0 ? (<section className="sorting"><Select options={sortingOptions} defaultValue={sortingOptions[0]} onChange={(option)=> setSortBy(option.value)} classNamePrefix="custom-select"/></section> ) : null } 
 
       {
         sortedItems.map((item)=>{
