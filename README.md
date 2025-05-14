@@ -2,6 +2,7 @@
 
 **TrekBag** is a lightweight packing list app built with **React** that helps you organize items for your next trip. You can add, sort, complete, and manage your packing list with ease. Data is stored locally in the browser using **Zustand** with `localStorage` support, so your list stays intact even after refreshing or closing the tab.
 
+You can access the live version of the app here: [TrekBag Live](https://trekbagg.netlify.app/)
 ---
 
 ## ✨ Features
