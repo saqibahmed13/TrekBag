@@ -33,5 +33,58 @@
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/trekbag.git
+git clone https://github.com/saqibahmed13/TrekBag.git
 cd trekbag
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm start
+```
+
+The app will run at [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📂 Project Structure
+
+```
+trekbag/
+├── public/
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── store/          # Zustand store
+│   ├── App.jsx
+│   └── index.js
+├── package.json
+└── README.md
+```
+
+---
+
+## 🧠 State Management
+
+The app uses **Zustand** for global state management. The state is automatically synced to the browser's `localStorage` so your packing list persists across sessions.
+
+---
+
+## 📌 Future Enhancements
+
+- [ ] Add item categories
+- [ ] Drag-and-drop sorting
+- [ ] Responsive mobile view improvements
+- [ ] Export or share list feature
+
+---
+
+## 📃 License
+
+This project is open source and free to use under the [MIT License](LICENSE).
